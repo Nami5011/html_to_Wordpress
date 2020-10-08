@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <meta name="description" content="サンプルマーケティングの公式企業サイトです。サンプルマーケティングの事業内容、会社概要、個人情報保護の取り組みなどを掲載しています。">
-  <title><?php wp_title('|', true, 'right'); ?><?php bloginfo('name'); ?>  | サンプルマーケティング株式会社</title>
+  <title><?php wp_title('|', true, 'right'); ?><?php bloginfo('name'); ?></title>
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="stylesheet" href="reset.css">
