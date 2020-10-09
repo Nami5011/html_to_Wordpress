@@ -6,13 +6,14 @@
   <meta name="viewport" content="width=device-width">
   <meta name="description" content="サンプルマーケティングの公式企業サイトです。サンプルマーケティングの事業内容、会社概要、個人情報保護の取り組みなどを掲載しています。">
   <title><?php wp_title('|', true, 'right'); ?><?php bloginfo('name'); ?></title>
-  <link rel="shortcut icon" href="favicon.ico">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>\favicon.ico">
+  <link rel="apple-touch-icon" href="<?php echo get_stylesheet_directory_uri(); ?>\apple-touch-icon.png">
+  <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>\reset.css">
+  <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
+  <?php wp_head(); ?>
 </head>
 
-<body>
+<body id="<?php the_slug(); ?>" <?php body_class(); ?>>
 
   <!-- ページ全体の囲み枠 -->
   <div id="wrapper">
