@@ -1,4 +1,7 @@
 {
 	"files.eol": "\n",
-	"phpcs.standard": "WordPress"
+	"phpcs.standard": "WordPress",
+	"phpcbf.standard": "WordPress",
+	"phpcbf.executablePath": "phpcbf.bat",
+	"phpcbf.onsave": true
 }
