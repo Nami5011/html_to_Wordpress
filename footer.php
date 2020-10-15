@@ -1,10 +1,19 @@
+<?php
+/**
+ * MyClass Class Doc Comment
+ *
+ * @category Footer
+ * @package  MyPackage
+ * @author    Nami Ueda
+ */
 
+?>
 <!-- フッターエリア -->
 		<footer>
 			<?php
 			$param = array(
-				'container' => 'nav',
-				'container_id' => 'fNav',
+				'container'      => 'nav',
+				'container_id'   => 'fNav',
 				'theme_location' => 'footer_nav', // @todo function.phpで定義したfooter_navと連動
 			);
 			wp_nav_menu( $param );

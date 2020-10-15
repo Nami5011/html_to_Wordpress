@@ -1,3 +1,13 @@
+<?php
+/**
+ * MyClass Class Doc Comment
+ *
+ * @category Header
+ * @package  MyPackage
+ * @author    Nami Ueda
+ */
+
+?>
 <!DOCTYPE html>
 <html lang="ja">
 
