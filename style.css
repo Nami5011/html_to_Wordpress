@@ -158,6 +158,7 @@ h1 {
 	display: -webkit-flex;
 	/* safari用 */
 	display: flex;
+	list-style: none;
 }
 
 /* メニューリストの共通スタイル */
@@ -282,6 +283,7 @@ footer {
 	justify-content: center;
 	width: 100%;
 	margin: 0 auto;
+	list-style: none;
 }
 
 /* メニューリストの共通スタイル */
