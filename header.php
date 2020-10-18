@@ -20,7 +20,7 @@
 	<link rel="shortcut icon" href="<?php echo esc_url( get_stylesheet_directory_uri( '/wp-content/themes/sample_marketing' ) ); ?>/favicon.ico">
 	<link rel="apple-touch-icon" href="<?php echo esc_url( get_stylesheet_directory_uri() . '/wp-content/themes/sample_marketing' ); ?>/apple-touch-icon.png">
 	<link rel="stylesheet" href="<?php echo esc_url( get_stylesheet_directory_uri() . '/wp-content/themes/sample_marketing' ); ?>/reset.css">
-	<link rel="stylesheet" href="<?php echo esc_url( get_stylesheet_uri( '/wp-content/themes/sample_marketing' ) ); ?>">
+	<link rel="stylesheet" href="<?php echo esc_url( get_stylesheet_uri( '/wp-content/themes/sample_marketing/style.css' ) ); ?>">
 	<?php wp_head(); ?>
 </head>
 
@@ -40,8 +40,8 @@
 		<!-- グローバルナビゲーション -->
 		<?php
 		$param = array(
-			'container' => 'nav',
-			'container_id' => 'gNav',
+			'container'      => 'nav',
+			'container_id'   => 'gNav',
 			'theme_location' => 'global_nav', // @todo function.phpで定義したglobal_navと連動
 		);
 		wp_nav_menu( $param );

@@ -7,8 +7,6 @@
  * @author    Nami Ueda
  */
 
-?>
-<?php
 /**
  * Get the slug.
  * Return value is $slug.

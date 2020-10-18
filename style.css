@@ -13,7 +13,7 @@
 body {
 	color: #4d4d4d;
 	font-size: 14px;
-	font-family: メイリオ,Meiryo,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","ＭＳ Ｐゴシック",sans-serif;
+	font-family: メイリオ, Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", sans-serif;
 	line-height: 1.6;
 }
 
@@ -60,6 +60,7 @@ a.post-edit-link {
 img {
 	vertical-align: bottom;
 }
+
 img.alignleft {
 	float: left;
 	padding-right: 15px;
@@ -154,7 +155,8 @@ h1 {
 
 /* メニューリストを囲む枠 */
 #gNav ul {
-	display: -webkit-flex;	/* safari用 */
+	display: -webkit-flex;
+	/* safari用 */
 	display: flex;
 }
 
@@ -272,9 +274,11 @@ footer {
 
 /* メニューリストを囲む枠 */
 #fNav ul {
-	display: -webkit-flex;				/* safari用 */
+	display: -webkit-flex;
+	/* safari用 */
 	display: flex;
-	-webkit-justify-content: center;	/* safari用 */
+	-webkit-justify-content: center;
+	/* safari用 */
 	justify-content: center;
 	width: 100%;
 	margin: 0 auto;
@@ -316,9 +320,11 @@ footer {
 
 /* 新着情報のリスト */
 #infolist {
-	display: -webkit-flex;						/* safari用 */
+	display: -webkit-flex;
+	/* safari用 */
 	display: flex;
-	-webkit-justify-content: space-between;		/* safari用 */
+	-webkit-justify-content: space-between;
+	/* safari用 */
 	justify-content: space-between;
 	margin-bottom: 15px;
 }
@@ -348,9 +354,11 @@ footer {
 
 /* 事業内容の枠 */
 #our-business {
-	display: -webkit-flex;		/* safari用 */
+	display: -webkit-flex;
+	/* safari用 */
 	display: flex;
-	-webkit-flex-wrap: wrap;	/* safari用 */
+	-webkit-flex-wrap: wrap;
+	/* safari用 */
 	flex-wrap: wrap;
 }
 
@@ -406,6 +414,75 @@ footer {
 /* 12.お問い合わせページ専用スタイル
 /* ------------------------------------------------ */
 
+/* お問い合わせフォーム */
+#mail-form table {
+	width: 700px;
+	margin: 0 auto;
+}
+
+#mail-form th {
+	font-weight: bold;
+	text-align: left;
+	width: 240px;
+	background: #f0f8ff;
+	vertical-align: top;
+}
+
+#mail-form th,
+#mail-form td {
+	border: 1px solid #ccc;
+	padding: 0.5em 0.5em;
+}
+
+#mail-form th span {
+	color: #fff;
+	padding: 0.1em 0.8em;
+	margin-right: 0.5em;
+	border-radius: 4px;
+	box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+#mail-form th span.required {
+	background: red;
+}
+
+#mail-form th span.notrequired {
+	background: #6495ed;
+}
+
+#mail-form tr:last-child td {
+	text-align: center;
+	border: none;
+	border-top: 1px solid #ccc;
+}
+
+#mail-form input[type="text"],
+#mail-form textarea {
+	width: 100%;
+	border: 1px solid #ccc;
+	padding: 0.2em 0.5em;
+	font-family: inherit;
+}
+
+#mail-form textarea {
+	min-height: 100px;
+}
+
+#mail-form input[type="submit"],
+#mail-form input[type="button"],
+#mail-form input[type="reset"] {
+	width: 120px;
+	background: #6495ed;
+	border: none;
+	color: #fff;
+	padding: 0.2em 0.5em;
+	margin-top: 20px;
+	height: 40px;
+	display: inline-block;
+	vertical-align: top;
+	font-family: inherit;
+}
+
 
 /* ------------------------------------------------ */
 /* 13.ブログページ専用スタイル
@@ -457,7 +534,9 @@ body.archive .entry-content img {
 	}
 
 	/* グリッド型のボックスを縦並びにする */
-	.col-4, .col-6, .col-8 {
+	.col-4,
+	.col-6,
+	.col-8 {
 		display: block;
 		width: 100%;
 	}
@@ -493,15 +572,18 @@ body.archive .entry-content img {
 		-webkit-flex-wrap: wrap;
 		flex-wrap: wrap;
 	}
+
 	#gNav li {
 		border-left: 1px solid #7dceec;
 		border-bottom: 1px solid #7dceec;
 		width: 33.33%;
 	}
+
 	/* メニューの4隅に枠線を付ける */
 	#gNav li:nth-child(3n) {
 		border-right: 1px solid #7dceec;
 	}
+
 	#gNav li:nth-child(1),
 	#gNav li:nth-child(2),
 	#gNav li:nth-child(3) {
@@ -598,9 +680,11 @@ body.archive .entry-content img {
 
 	/* 新着情報のリスト */
 	#infolist {
-		-webkit-flex-wrap: wrap;	/* safari用 */
+		-webkit-flex-wrap: wrap;
+		/* safari用 */
 		flex-wrap: wrap;
 	}
+
 	#infolist li {
 		width: 48%;
 	}
@@ -665,8 +749,8 @@ body.archive .entry-content img {
 
 	/* エリア内の画像 */
 	.single #contents img {
-		max-width:100%;
-		height:100%;
+		max-width: 100%;
+		height: 100%;
 	}
 
 	/* アーカイブページのサムネイル */
