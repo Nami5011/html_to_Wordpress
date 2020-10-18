@@ -26,9 +26,9 @@ function the_slug() {
 	// @todo スラッグを出力する
 	echo $slug;
 }
+
 $params = array(
 	'global_nav' => 'グローバルナビゲーション',
 	'footer_nav' => 'フッターナビゲーション',
 );
 register_nav_menus( $params );
-
