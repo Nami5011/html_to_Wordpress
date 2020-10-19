@@ -94,6 +94,33 @@ img.alignright {
 	padding: 15px;
 }
 
+/* 一覧へ移動ボタン（続きを読むボタン） */
+a.readmore {
+	display: block;
+	margin-left: auto;
+	width: 6em;
+	height: 2em;
+	line-height: 2;
+	border: 1px solid #eeeeee;
+	border-radius: 4px;
+	box-shadow: 1px 1px 1px #999999;
+	text-align: center;
+	text-decoration: none;
+	padding-left: 1em;
+	position: relative;
+}
+
+a.readmore::before {
+	content: '▲';
+	-webkit-transform: rotate(90deg) translateX(-50%);
+	transform: rotate(90deg) translateX(-50%);
+	position: absolute;
+	top: 50%;
+	left: 15px;
+	width: 14px;
+	height: 14px;
+}
+
 /* パンくずリスト */
 .breadcrumbs {
 	margin-bottom: 20px;
