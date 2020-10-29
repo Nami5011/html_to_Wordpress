@@ -36,9 +36,12 @@
 					</div>
 					<!--ページの本文-->
 					<div class="entry-content">
+						<!--アイキャッチ画像-->
 						<?php the_post_thumbnail(); ?>
+						<!--続きへボタン-->
 						<?php the_excerpt(); ?>
 					</div>
+					<!--編集ボタン-->
 					<?php edit_post_link(); ?>
 				</div>
 			</article>
@@ -46,6 +49,12 @@
 					<?php
 				endwhile;
 			endif;
+			?>
+			<!--ページ送り-->
+			<?php
+			if ( function_exists( 'wp_pagenavi()' ) ) {
+				wp_pagenavi();
+			}
 			?>
 		</section>
 		<!--//コンテンツエリア-->
