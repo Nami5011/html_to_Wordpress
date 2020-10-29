@@ -52,7 +52,7 @@
 			?>
 			<!--ページ送り-->
 			<?php
-			if ( function_exists( 'wp_pagenavi()' ) ) {
+			if ( function_exists( 'wp_pagenavi' ) ) {
 				wp_pagenavi();
 			}
 			?>
