@@ -14,7 +14,7 @@
 		<section id="contents">
 
 			<!--メイン画像-->
-			<img id="main_visual" class="inner" src="http://localhost/wp-content/uploads/2020/11/main_visual.jpg" alt="サンプルマーケティング">
+			<img id="main_visual" class="inner" src="<?php echo esc_url( get_stylesheet_directory_uri( '/wp-content/themes/sample_marketing' ) ); ?>/img/main_visual.jpg" alt="サンプルマーケティング">
 
 			<!--お知らせ-->
 			<h2>Information</h2>
