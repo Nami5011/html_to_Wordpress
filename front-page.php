@@ -14,37 +14,31 @@
 		<section id="contents">
 
 			<!--メイン画像-->
-			<img id="main_visual" class="inner" src="img/main_visual.jpg" alt="サンプルマーケティング">
+			<img id="main_visual" class="inner" src="http://localhost/wp-content/uploads/2020/11/main_visual.jpg" alt="サンプルマーケティング">
 
 			<!--お知らせ-->
 			<h2>Information</h2>
 			<div class="inner">
 				<ul id="infolist">
+					<?php
+					if ( have_posts() ) :
+						while ( have_posts() ) :
+							the_post();
+							?>
 					<li>
-						<div class="thumb"><img src="img/import.jpg" alt=""></div>
-						<div class="date">2016/10/15</div>
-						<div class="title"><a href="news20161015.html">取り扱い商品数が10000種類を超えました。</a></div>
+							<?php
+							if ( has_post_thumbnail() ) {
+								?>
+							<div class="thumb"><?php has_post_thumbnail(); ?></div>
+							<?php } ?>
+						<div class="date"><?php the_time( 'Y/m/d' ); ?></div>
+						<div class="title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
+							<?php edit_post_link(); ?>
 					</li>
-					<li>
-						<div class="thumb"><img src="img/webshop.jpg" alt=""></div>
-						<div class="date">2016/09/10</div>
-						<div class="title"><a href="news20160910.html">国内大手Eストアにて売上3位を獲得しました。</a></div>
-					</li>
-					<li>
-						<div class="thumb"><img src="img/consulting.jpg" alt=""></div>
-						<div class="date">2016/06/03</div>
-						<div class="title"><a href="news20160603.html">コンサルティング契約社数が10社を超えました。</a></div>
-					</li>
-					<li>
-						<div class="thumb"><img src="img/import.jpg" alt=""></div>
-						<div class="date">2016/02/02</div>
-						<div class="title"><a href="news20160202.html">当社オリジナルブランド商品の企画をスタートしました。</a></div>
-					</li>
-					<li>
-						<div class="thumb"><img src="img/webshop.jpg" alt=""></div>
-						<div class="date">2016/01/10</div>
-						<div class="title"><a href="news20160110.html">ホームページをリニューアルしました。</a></div>
-					</li>
+							<?php
+						endwhile;
+					endif;
+					?>
 				</ul>
 			</div>
 
@@ -53,15 +47,15 @@
 			<div id="our-business" class="inner">
 				<div class="biz-box col-4">
 					<h3>海外輸入小売事業</h3>
-					<a href="business.html"><img class="photoframe" src="img/import.jpg" alt="海外輸入小売事業"></a>
+					<a href="business.html"><img class="photoframe" src="<?php echo esc_url( get_stylesheet_directory_uri( '/wp-content/themes/sample_marketing' ) ); ?>/img/import.jpg" alt="海外輸入小売事業"></a>
 				</div>
 				<div class="biz-box col-4">
 					<h3>インターネット通販事業</h3>
-					<a href="business.html"><img class="photoframe" src="img/webshop.jpg" alt="インターネット通販事業"></a>
+					<a href="business.html"><img class="photoframe" src="<?php echo esc_url( get_stylesheet_directory_uri( '/wp-content/themes/sample_marketing' ) ); ?>/img/webshop.jpg" alt="インターネット通販事業"></a>
 				</div>
 				<div class="biz-box col-4">
 					<h3>コンサルティング事業</h3>
-					<a href="business.html"><img class="photoframe" src="img/consulting.jpg" alt="コンサルティング事業"></a>
+					<a href="business.html"><img class="photoframe" src="<?php echo esc_url( get_stylesheet_directory_uri( '/wp-content/themes/sample_marketing' ) ); ?>/img/consulting.jpg" alt="コンサルティング事業"></a>
 				</div>
 			</div>
 		</section>
